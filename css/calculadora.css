@@ -1,0 +1,75 @@
+#calculadora{
+  background-color: #c4c4c4;
+  border: 2px solid #000;
+  color: 000;
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  width: 30vw;
+}
+
+#calculadora h3{
+  font-size: .8em;
+  font-weight: 300;
+  color: #333;
+}
+
+#operations {
+  text-align: right ;
+}
+
+#previous-operation,
+#current-operation {
+  min-height: 1.6em;
+  overflow-wrap: break-word;
+  padding: .2em;
+}
+
+#previous-operation {
+  color: #777;
+  background-color: #f3f3f3;
+  border: 2px solid #555;
+  border-bottom: none;
+}
+
+#current-operation {
+  font-size: 3em;
+  font-weight: 700;
+  background-color: #f3f3f3;
+  border: 2px solid #555;
+  border-top: none;
+  margin-bottom: 10px;
+}
+
+#buttons-container {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#buttons-container button {
+  background-color: #dbdbdb;
+  border: 1px solid #666;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 1.3em;
+  height: 4em;
+}
+#buttons-container button:hover {
+  background-color: #bababa;
+  border-color: #777;
+  transition: .15s ease-in-out;
+  transform: scale(.999)
+}
+
+#buttons-container .number {
+   background-color: #f3f3f3;
+}
+
+#buttons-container #equal-btn {
+  grid-column: span 2;
+  background-color: #75a5cb;
+}
+#buttons-container #equal-btn:hover {
+  background-color: #3a91e8;
+}
